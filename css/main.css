@@ -1,0 +1,160 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#full-screen-background-image {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.table {
+	display: table;
+  margin: 0 auto;
+  height: 100%;
+}
+
+
+h1, h2 {
+	font-family:'Josefin Slab', serif;
+	font-weight:400;
+  font-size:3em;
+	color:#2f484f;
+  margin-top:3em;
+}
+
+p.app-by {
+	font-family:'Cabin', serif;
+	font-weight:400;
+	color: #2f484f;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+
+
+ul {
+  display:block;
+}
+
+del {
+  text-decoration: line-through; color:#00aeff;
+}
+
+.shopping {
+  text-align:center;
+  font-family:'Cabin', serif;
+  letter-spacing:2px;
+  margin-top:1.5em;
+  text-transform:uppercase;
+
+}
+
+.header {
+	text-align: center;
+  margin-top:5em;
+}
+
+.tips {
+	margin-left:5em;
+	display: table-cell;
+  height: 405px;
+  width:450px;
+}
+
+.delete {
+  float: right;
+  margin-top: 3px;
+  margin-left:20px;
+/*  display: none;*/
+}
+
+/*.container {
+  display: table-cell;
+  height: 405px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+/*  margin-top:5em;*/
+}*/
+
+#item {
+  margin-top: 10px;
+  margin-left: 3em;
+  height: 50px;
+  width: 400px;
+  border-radius:1em;
+  font-family:'Cabin', serif;
+  font-weight:400;
+  font-size:1em;
+  letter-spacing:1px;
+}
+
+
+.item {
+  margin-top: 1em;
+  padding-left:1em;
+  padding-top: 1em;
+  height: 20px;
+  width: 200px;
+  color:white;
+  font-family:'Cabin', serif;
+  font-weight:400;
+  list-style-type:none;
+  font-size:1.5em;
+}
+
+label {
+  margin-left:1em;
+}
+
+/*input [type=checkbox]{
+  font-size:5em;
+}
+*/
+
+button {
+  -webkit-border-radius: 30;
+  -moz-border-radius: 30;
+  border-radius: 30px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  background: #3498db;
+  padding: 10px 50px 10px 50px;
+  text-decoration: none;
+  margin-top:2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Grow */
+button.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+button.hvr-grow:hover,
+button.hvr-grow:focus,
+button.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+button:hover {
+  background: #fc6f3c;
+  text-decoration: none;
+}
+
+
