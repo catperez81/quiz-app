@@ -32,7 +32,7 @@ quizItems[2] = new QuizItem(
 	'');
 
 quizItems[3] = new QuizItem(
-	"What’s your fitness level",
+	"What's your fitness level",
 	'living my life',
 	'yoga - namaste b*tches',
 	'extreme sports, bro',
@@ -41,7 +41,7 @@ quizItems[3] = new QuizItem(
 	'');
 
 quizItems[4] = new QuizItem(
-	"What’s your poison?",
+	"What's your poison?",
 	'a nice glass of wine',
 	'local craft beer',
 	'whiskey anytime, anyway',
@@ -50,26 +50,28 @@ quizItems[4] = new QuizItem(
 	'');
 
 $(document).ready(function() {
+  var currentQuestionIdx = 0;
+
   $('.start').click(function() {
   	$('.intro').hide();
   	$('.quiz').show();
   	$('.next').show();
-  	showQuizItem(quizItems[0]);
+  	$('.btn').show();
+  	showQuizItem(quizItems[currentQuestionIdx]);
   });
 
    $('.next').click(function() {
+   	currentQuestionIdx++
   	$('.intro').hide();
   	$('.quiz').show();
   	$('.next').show();
-  	showQuizItem(quizItems[1]);
+  	$('.btn').show();
+  	showQuizItem(quizItems[currentQuestionIdx]);
   });
 
-   $('.next').click(function() {
-  	$('.intro').hide();
-  	$('.quiz').show();
-  	$('.next').show();
-  	showQuizItem(quizItems[2]);
-  });
+   // .addClass('last')
+
+
 
 	function showQuizItem(quizItem) {
 	  console.log(quizItem.question);
