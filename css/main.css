@@ -5,6 +5,16 @@ html, body {
   margin: 0;
 }
 
+.quiz {
+  display: none;
+}
+
+.next {
+  display: none;
+  margin-top: 50px;
+  margin-left:20px;
+}
+
 #full-screen-background-image {
   z-index: -999;
   min-height: 100%;
@@ -43,7 +53,7 @@ del {
   text-decoration: line-through; color:#00aeff;
 }
 
-.Question1 {
+.question {
   text-align:center;
   font-family:'Cabin', serif;
   margin-top:1.5em;
