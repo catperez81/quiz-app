@@ -16,12 +16,6 @@ html, body {
   left: 0;
 }
 
-.table {
-	display: table;
-  margin: 0 auto;
-  height: 100%;
-}
-
 
 h1, h2 {
 	font-family:'Josefin Slab', serif;
@@ -42,18 +36,17 @@ p.app-by {
 
 ul {
   display:block;
+  padding-left:25em;
 }
 
 del {
   text-decoration: line-through; color:#00aeff;
 }
 
-.shopping {
+.Question1 {
   text-align:center;
   font-family:'Cabin', serif;
-  letter-spacing:2px;
   margin-top:1.5em;
-  text-transform:uppercase;
 
 }
 
@@ -84,6 +77,7 @@ del {
 /*  margin-top:5em;*/
 }*/
 
+
 #item {
   margin-top: 10px;
   margin-left: 3em;
@@ -102,8 +96,8 @@ del {
   padding-left:1em;
   padding-top: 1em;
   height: 20px;
-  width: 200px;
-  color:white;
+  width: 600px;
+  color:#2f484f;
   font-family:'Cabin', serif;
   font-weight:400;
   list-style-type:none;
@@ -119,7 +113,17 @@ label {
 }
 */
 
-button {
+.start {
+  padding-left: 29em;
+  height: 100%;
+}
+
+.back {
+  padding-left: 2em;
+  height: 10%;
+}
+
+a {
   -webkit-border-radius: 30;
   -moz-border-radius: 30;
   border-radius: 30px;
@@ -127,7 +131,7 @@ button {
   color: #ffffff;
   font-size: 18px;
   background: #3498db;
-  padding: 10px 50px 10px 50px;
+  padding: 10px 84px 10px 84px;
   text-decoration: none;
   margin-top:2em;
   display: inline-block;
@@ -135,7 +139,7 @@ button {
 }
 
 /* Grow */
-button.hvr-grow {
+a.hvr-grow {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
@@ -146,13 +150,13 @@ button.hvr-grow {
     transition-property: transform;
 }
 
-button.hvr-grow:hover,
-button.hvr-grow:focus,
-button.hvr-grow:active {
+a.hvr-grow:hover,
+a.hvr-grow:focus,
+a.hvr-grow:active {
     transform: scale(1.1);
 }
 
-button:hover {
+a:hover {
   background: #fc6f3c;
   text-decoration: none;
 }
