@@ -13,12 +13,62 @@ quizItems[0] = new QuizItem(
 	"I don't drink coffee",
 	'');
 
+quizItems[1] = new QuizItem(
+	'What could you eat forever?',
+	'meat & potatoes',
+	'burritos / tacos',
+	'anything with bread',
+	'sushi',
+	'pizza',
+	'');
+
+quizItems[2] = new QuizItem(
+	"What's on top of your bucket list?",
+	'backpacking in Europe',
+	'chilling in Bali',
+	'road trip across America',
+	'summer in the Hamptons',
+	'coachella',
+	'');
+
+quizItems[3] = new QuizItem(
+	"What’s your fitness level",
+	'living my life',
+	'yoga - namaste b*tches',
+	'extreme sports, bro',
+	'hiking is nature’s exercise',
+	'burning calories while partying',
+	'');
+
+quizItems[4] = new QuizItem(
+	"What’s your poison?",
+	'a nice glass of wine',
+	'local craft beer',
+	'whiskey anytime, anyway',
+	'finest cocktail around',
+	'shots!',
+	'');
+
 $(document).ready(function() {
   $('.start').click(function() {
   	$('.intro').hide();
   	$('.quiz').show();
   	$('.next').show();
   	showQuizItem(quizItems[0]);
+  });
+
+   $('.next').click(function() {
+  	$('.intro').hide();
+  	$('.quiz').show();
+  	$('.next').show();
+  	showQuizItem(quizItems[1]);
+  });
+
+   $('.next').click(function() {
+  	$('.intro').hide();
+  	$('.quiz').show();
+  	$('.next').show();
+  	showQuizItem(quizItems[2]);
   });
 
 	function showQuizItem(quizItem) {
@@ -31,6 +81,7 @@ $(document).ready(function() {
 	  $('.answer5 label').text(quizItem.answer5);
 	}
 });
+
 
 // Quiz item constructor
 function QuizItem(question, answer1, answer2, answer3, answer4, answer5, userAnswer) {
