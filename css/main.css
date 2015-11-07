@@ -15,8 +15,8 @@ html, body {
   margin-left:20px;
 }
 
-.btn {
-  display: none;
+.new {
+/*  display: none;*/
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;

@@ -40,7 +40,7 @@ quizItems[3] = new QuizItem(
 	'burning calories while partying',
 	'');
 
-quizItems[4] = new QuizItem(
+quizItems[4] = new QuizItem.addClass('last')(
 	"What's your poison?",
 	'a nice glass of wine',
 	'local craft beer',
@@ -56,7 +56,7 @@ $(document).ready(function() {
   	$('.intro').hide();
   	$('.quiz').show();
   	$('.next').show();
-  	$('.btn').show();
+  	$('.new').show();
   	showQuizItem(quizItems[currentQuestionIdx]);
   });
 
@@ -65,11 +65,19 @@ $(document).ready(function() {
   	$('.intro').hide();
   	$('.quiz').show();
   	$('.next').show();
-  	$('.btn').show();
+  	$('.new').show();
   	showQuizItem(quizItems[currentQuestionIdx]);
   });
 
-   // .addClass('last')
+    $('.next').click(function() {
+   	QuizItem.last
+  	$('.intro').hide();
+  	$('.quiz').show();
+  	$('.next').show();
+  	alert('show me my answer');
+  });
+
+
 
 
 
