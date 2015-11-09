@@ -40,7 +40,7 @@ quizItems[3] = new QuizItem(
 	'burning calories while partying',
 	'');
 
-quizItems[4] = new QuizItem.addClass('last')(
+quizItems[4] = new QuizItem(
 	"What's your poison?",
 	'a nice glass of wine',
 	'local craft beer',
