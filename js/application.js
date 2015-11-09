@@ -66,15 +66,15 @@ $(document).ready(function() {
   	$('.quiz').show();
   	$('.next').show();
   	$('.new').show();
-  	showQuizItem(quizItems[currentQuestionIdx]);
-  });
 
-    $('.next').click(function() {
-   	QuizItem.last
-  	$('.intro').hide();
-  	$('.quiz').show();
-  	$('.next').show();
-  	alert('show me my answer');
+  	if (currentQuestionIdx < 5) {
+  		showQuizItem(quizItems[currentQuestionIdx]);
+  	} else {
+  		alert('Quiz finished!');
+  	}
+
+  	($("input:radio").attr("checked", false);) 
+  	
   });
 
 
