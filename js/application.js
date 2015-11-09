@@ -73,8 +73,6 @@ $(document).ready(function() {
   		alert('Quiz finished!');
   	}
 
-  	($("input:radio").attr("checked", false);) 
-  	
   });
 
 
