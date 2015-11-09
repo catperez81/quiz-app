@@ -3,6 +3,13 @@
 //   alert('Oh, hi there, world');
 // });
 var quizItems = new Array();
+var cityPoints = new Array();
+
+cityPoints[0] = 0; // Paris
+cityPoints[1] = 0; // Portland
+cityPoints[2] = 0; // Cape Town
+cityPoints[3] = 0; // New York
+cityPoints[4] = 0; // Tokyo
 
 quizItems[0] = new QuizItem(
 	'How do you take your coffee?',
@@ -60,7 +67,7 @@ $(document).ready(function() {
   	showQuizItem(quizItems[currentQuestionIdx]);
   });
 
-   $('.next').click(function() {
+   $('.next').click(function() {   	
    	currentQuestionIdx++
   	$('.intro').hide();
   	$('.quiz').show();
@@ -73,10 +80,16 @@ $(document).ready(function() {
   		alert('Quiz finished!');
   	}
 
+   $("input:radio").attr("checked", false); 
+
   });
 
+    // New Quiz Button Functionality
 
-
+	// function newQuiz() {
+	//   console.log(quizItem.question);
+	//   $('.question').text(quizItem.question);
+	// }
 
 
 	function showQuizItem(quizItem) {
@@ -101,6 +114,7 @@ function QuizItem(question, answer1, answer2, answer3, answer4, answer5, userAns
     this.answer5    = answer5;
     this.userAnswer = userAnswer;
 }
+
 
 // user clicks submit to advance to next question
 // log but don't show choice

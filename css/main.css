@@ -16,19 +16,18 @@ html, body {
 }
 
 .new {
-/*  display: none;*/
+  display: none;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Arial;
   color: #ffffff;
   font-size: 16px;
-  background: #d9346b;
   padding: 6px 16px 6px 16px;
   text-decoration: none;
-  margin-top:30px;
+  margin-top:10px;
   margin-left:30px;
-  /*  display:inline-table;*/
+
 }
 
 .btn:hover {
@@ -166,7 +165,7 @@ a {
   color: #ffffff;
   font-size: 18px;
   background: #3498db;
-  padding: 10px 84px 10px 84px;
+  padding: 10px 70px 10px 70px;
   text-decoration: none;
   margin-top:2em;
   display: inline-block;
