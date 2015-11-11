@@ -84,7 +84,14 @@ $(document).ready(function() {
 
   });
 
+
+
     // New Quiz Button Functionality
+  $(document).ready(function() {
+   	$('.new').click(function() {  
+	alert('test');
+ 	});
+
 
 	// function newQuiz() {
 	//   console.log(quizItem.question);
@@ -116,7 +123,6 @@ function QuizItem(question, answer1, answer2, answer3, answer4, answer5, userAns
 }
 
 
-// user clicks submit to advance to next question
 // log but don't show choice
 // logic for choices to determine city
 // user can start a new quiz which clears all logged answers
