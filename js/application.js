@@ -67,7 +67,7 @@ $(document).ready(function() {
   	showQuizItem(quizItems[currentQuestionIdx]);
   });
 
-   $('.next').click(function() {   	
+  $('.next').click(function() {   	
    	currentQuestionIdx++
   	$('.intro').hide();
   	$('.quiz').show();
@@ -85,19 +85,10 @@ $(document).ready(function() {
   });
 
 
-
-    // New Quiz Button Functionality
-  $(document).ready(function() {
-   	$('.new').click(function() {  
-	alert('test');
- 	});
-
-
-	// function newQuiz() {
-	//   console.log(quizItem.question);
-	//   $('.question').text(quizItem.question);
-	// }
-
+	function newQuiz() {
+	  alert('test');
+	  $('.new').show();
+	}
 
 	function showQuizItem(quizItem) {
 	  console.log(quizItem.question);
