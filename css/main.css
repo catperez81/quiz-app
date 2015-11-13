@@ -9,24 +9,27 @@ html, body {
   display: none;
 }
 
-.next {
+a.next {
   display: none;
   margin-top: 50px;
-  margin-left:20px;
+  margin-left:30px;
 }
 
-.new {
-  display: none;
+.new-button {
+    display: none;
+}
+
+a.new {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Arial;
   color: #ffffff;
   font-size: 16px;
-  padding: 6px 16px 6px 16px;
+  padding: 6px 10px 6px 10px;
   text-decoration: none;
-  margin-top:10px;
-  margin-left:30px;
+  margin-top:5px;
+  margin-left:10px;
 
 }
 
@@ -74,15 +77,10 @@ ul {
   padding-left:25em;
 }
 
-del {
-  text-decoration: line-through; color:#00aeff;
-}
-
 .question {
   text-align:center;
-  font-family:'Cabin', serif;
-  margin-top:1.5em;
-
+  font-family:'Josefin Slab', serif;
+  margin-top:1em;
 }
 
 .header {
@@ -90,31 +88,8 @@ del {
   margin-top:5em;
 }
 
-.tips {
-	margin-left:5em;
-	display: table-cell;
-  height: 405px;
-  width:450px;
-}
-
-.delete {
-  float: right;
-  margin-top: 3px;
-  margin-left:20px;
-/*  display: none;*/
-}
-
-/*.container {
-  display: table-cell;
-  height: 405px;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7);
-/*  margin-top:5em;*/
-}*/
-
-
 #item {
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 3em;
   height: 50px;
   width: 400px;
@@ -127,7 +102,7 @@ del {
 
 
 .item {
-  margin-top: 1em;
+  margin-top: .5em;
   padding-left:1em;
   padding-top: 1em;
   height: 20px;
@@ -148,13 +123,10 @@ label {
 }
 */
 
-.start {
+a.start {
   height: 100%;
-}
-
-.back {
-  padding-left: 2em;
-  height: 10%;
+  margin-top: 20px;
+  margin-left:0px;
 }
 
 a {
@@ -165,9 +137,10 @@ a {
   color: #ffffff;
   font-size: 18px;
   background: #3498db;
-  padding: 10px 70px 10px 70px;
+  padding: 10px 50px 10px 50px;
   text-decoration: none;
   margin-top:2em;
+  margin-left:2em;
   display: inline-block;
   vertical-align: middle;
 }

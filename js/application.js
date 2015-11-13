@@ -13,47 +13,47 @@ cityPoints[4] = 0; // Tokyo
 
 quizItems[0] = new QuizItem(
 	'How do you take your coffee?',
-	'local and organic',
-	'pourover',
-	'anything from starbucks will do',
-	'black',
+	'Local and organic',
+	'Pourover',
+	'Anything from starbucks will do',
+	'Black',
 	"I don't drink coffee",
 	'');
 
 quizItems[1] = new QuizItem(
 	'What could you eat forever?',
-	'meat & potatoes',
-	'burritos / tacos',
-	'anything with bread',
-	'sushi',
-	'pizza',
+	'Meat & potatoes',
+	'Burritos & tacos',
+	'Anything with bread',
+	'Sushi',
+	'Pizza',
 	'');
 
 quizItems[2] = new QuizItem(
 	"What's on top of your bucket list?",
-	'backpacking in Europe',
-	'chilling in Bali',
-	'road trip across America',
-	'summer in the Hamptons',
-	'coachella',
+	'Backpacking in Europe',
+	'Chilling in Bali',
+	'Road trip across America',
+	'Summer in the Hamptons',
+	'Coachella',
 	'');
 
 quizItems[3] = new QuizItem(
 	"What's your fitness level",
-	'living my life',
-	'yoga - namaste b*tches',
-	'extreme sports, bro',
-	'hiking is nature’s exercise',
-	'burning calories while partying',
+	'Living my life',
+	'Yoga - namaste b*tches',
+	'Extreme sports, bro',
+	"Hiking is nature's exercise",
+	'Burning calories while partying',
 	'');
 
 quizItems[4] = new QuizItem(
 	"What's your poison?",
-	'a nice glass of wine',
-	'local craft beer',
-	'whiskey anytime, anyway',
-	'finest cocktail around',
-	'shots!',
+	'A nice glass of wine',
+	'Local craft beer',
+	'Whiskey anytime, anyway',
+	'Finest cocktail around',
+	'Shots!',
 	'');
 
 $(document).ready(function() {
@@ -64,7 +64,7 @@ $(document).ready(function() {
   	$('.intro').hide();
   	$('.quiz').show();
   	$('.next').show();
-  	$('.new').show();
+  	$('.new-button').show();
   	showQuizItem(quizItems[currentQuestionIdx]);
   });
 
@@ -73,7 +73,7 @@ $(document).ready(function() {
   	$('.intro').hide();
   	$('.quiz').show();
   	$('.next').show();
-  	$('.new').show();
+  	$('.new-button').show();
 
   	var currentAnswer = $('input[name=answer]:checked', '#question-form').val();
   	if (currentAnswer == quizItems[currentQuestionIdx - 1].answer1) {
@@ -104,32 +104,24 @@ $(document).ready(function() {
   		showQuizItem(quizItems[currentQuestionIdx]);
   	} else {
   		alert('Quiz finished!');
-  	}
+  		if (cityPoints[0] > cityPoints[1] && cityPoints[0] > cityPoints[2] && cityPoints[0] > cityPoints[3] && cityPoints[0] > cityPoints[4]) {
+		  alert('You got Paris!');
+		} else if (cityPoints[1] > cityPoints[0] && cityPoints[1] > cityPoints[2] && cityPoints[1] > cityPoints[3] && cityPoints[1] > cityPoints[4]) {
+		  alert('You got Portland!');
+		} else if (cityPoints[2] > cityPoints[0] && cityPoints[2] > cityPoints[1] && cityPoints[2] > cityPoints[3] && cityPoints[2] > cityPoints[4]) {
+		  alert('You got Cape Town!');
+		} else if (cityPoints[3] > cityPoints[0] && cityPoints[3] > cityPoints[1] && cityPoints[3] > cityPoints[2] && cityPoints[3] > cityPoints[4]) {
+		  alert('You got New York!');
+		} else if (cityPoints[4] > cityPoints[0] && cityPoints[4] > cityPoints[1] && cityPoints[4] > cityPoints[2] && cityPoints[4] > cityPoints[3]) {
+		  alert('You got Tokyo!');
+		}
 
-  	if (cityPoints[0] >= 3) {
-  		alert('You got Paris!');
-  	}
-  	else if {
-  		(cityPoints[1] >= 3) {
-  		alert('You got Portland!');
-  	}
-  	else if {
-  		(cityPoints[2] >= 3) {
-  		alert('You got Cape Town!');
-  	}
-  	else if {
-  		(cityPoints[3] >= 3) {
-  		alert('You got New York!');
-  	}
-  	else if {
-  		(cityPoints[4] >= 3) {
-  		alert('You got Tokyo!');
   	}
 
    $("input:radio").attr("checked", false); 
   });
 
-    $('.new').click(function() {
+    $('.new-button').click(function() {
    	$('.intro').show();
   	$('.quiz').hide();
   	$('.next').hide();
