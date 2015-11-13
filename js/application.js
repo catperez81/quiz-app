@@ -62,6 +62,7 @@ $(document).ready(function() {
   $('.start').click(function() {
   	currentQuestionIdx = 0;
   	$('.intro').hide();
+  	$('.row-Paris').hide();
   	$('.quiz').show();
   	$('.next').show();
   	$('.new-button').show();
@@ -71,6 +72,7 @@ $(document).ready(function() {
   $('.next').click(function() {  
   	currentQuestionIdx++; 	
   	$('.intro').hide();
+  	$('.row-Paris').hide();
   	$('.quiz').show();
   	$('.next').show();
   	$('.new-button').show();
@@ -103,9 +105,15 @@ $(document).ready(function() {
   	if (currentQuestionIdx < 5) {
   		showQuizItem(quizItems[currentQuestionIdx]);
   	} else {
-  		alert('Quiz finished!');
+  		// alert('Quiz finished!');
   		if (cityPoints[0] > cityPoints[1] && cityPoints[0] > cityPoints[2] && cityPoints[0] > cityPoints[3] && cityPoints[0] > cityPoints[4]) {
-		  alert('You got Paris!');
+		  // alert('You got Paris!');
+		  	$('.intro').hide();
+  			$('.quiz').hide();
+  			$('.next').hide();
+  			$('.new-button').show();
+		  	$('.row-Paris').show();
+
 		} else if (cityPoints[1] > cityPoints[0] && cityPoints[1] > cityPoints[2] && cityPoints[1] > cityPoints[3] && cityPoints[1] > cityPoints[4]) {
 		  alert('You got Portland!');
 		} else if (cityPoints[2] > cityPoints[0] && cityPoints[2] > cityPoints[1] && cityPoints[2] > cityPoints[3] && cityPoints[2] > cityPoints[4]) {
@@ -126,6 +134,7 @@ $(document).ready(function() {
   	$('.quiz').hide();
   	$('.next').hide();
   	$('.new').hide();
+  	$('.row-Paris').hide();
    });
 
 	function showQuizItem(quizItem) {

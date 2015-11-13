@@ -71,6 +71,26 @@ p.app-by {
   letter-spacing:2px;
 }
 
+.Paris {
+  font-family:'Cabin', serif;
+  font-weight:400;
+  color: #2f484f;
+  letter-spacing:2px;
+  line-height:2em;
+  margin-left: 10em;
+  padding-right: 40%;
+}
+
+#Paris-img {
+ padding-left:65%;
+ margin-top:-15em;
+}
+
+.row-Paris {
+  display: none;
+  padding-bottom: 3em;
+}
+
 
 ul {
   display:block;
