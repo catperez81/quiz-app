@@ -115,13 +115,37 @@ $(document).ready(function() {
 		  	$('.row-Paris').show();
 
 		} else if (cityPoints[1] > cityPoints[0] && cityPoints[1] > cityPoints[2] && cityPoints[1] > cityPoints[3] && cityPoints[1] > cityPoints[4]) {
-		  alert('You got Portland!');
+		  // alert('You got Portland!');
+		  	$('.intro').hide();
+  			$('.quiz').hide();
+  			$('.next').hide();
+  			$('.new-button').show();
+		  	$('.row-Portland').show();
+
 		} else if (cityPoints[2] > cityPoints[0] && cityPoints[2] > cityPoints[1] && cityPoints[2] > cityPoints[3] && cityPoints[2] > cityPoints[4]) {
-		  alert('You got Cape Town!');
+		  // alert('You got Cape Town!');
+		  	$('.intro').hide();
+  			$('.quiz').hide();
+  			$('.next').hide();
+  			$('.new-button').show();
+		  	$('.row-CapeTown').show();
+
 		} else if (cityPoints[3] > cityPoints[0] && cityPoints[3] > cityPoints[1] && cityPoints[3] > cityPoints[2] && cityPoints[3] > cityPoints[4]) {
-		  alert('You got New York!');
+		  // alert('You got New York!');
+		  	$('.intro').hide();
+  			$('.quiz').hide();
+  			$('.next').hide();
+  			$('.new-button').show();
+		  	$('.row-NewYork').show();
+
 		} else if (cityPoints[4] > cityPoints[0] && cityPoints[4] > cityPoints[1] && cityPoints[4] > cityPoints[2] && cityPoints[4] > cityPoints[3]) {
-		  alert('You got Tokyo!');
+		  // alert('You got Tokyo!');
+		   	$('.intro').hide();
+  			$('.quiz').hide();
+  			$('.next').hide();
+  			$('.new-button').show();
+		  	$('.row-Tokyo').show();
+
 		}
 
   	}
@@ -133,8 +157,11 @@ $(document).ready(function() {
    	$('.intro').show();
   	$('.quiz').hide();
   	$('.next').hide();
-  	$('.new').hide();
   	$('.row-Paris').hide();
+  	$('.row-Portland').hide();
+  	$('.row-CapeTown').hide();
+  	$('.row-NewYork').hide();
+  	$('.row-Tokyo').hide();
    });
 
 	function showQuizItem(quizItem) {
