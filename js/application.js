@@ -106,7 +106,7 @@ $(document).ready(function() {
   		showQuizItem(quizItems[currentQuestionIdx]);
   	} else {
   		// alert('Quiz finished!');
-  		if (cityPoints[0] > cityPoints[1] && cityPoints[0] > cityPoints[2] && cityPoints[0] > cityPoints[3] && cityPoints[0] > cityPoints[4]) {
+  		if (cityPoints[0] >= cityPoints[1] && cityPoints[0] > cityPoints[2] && cityPoints[0] > cityPoints[3] && cityPoints[0] > cityPoints[4]) {
 		  // alert('You got Paris!');
 		  	$('.intro').hide();
   			$('.quiz').hide();
@@ -114,7 +114,7 @@ $(document).ready(function() {
   			$('.new-button').show();
 		  	$('.row-Paris').show();
 
-		} else if (cityPoints[1] > cityPoints[0] && cityPoints[1] > cityPoints[2] && cityPoints[1] > cityPoints[3] && cityPoints[1] > cityPoints[4]) {
+		} else if (cityPoints[1] >= cityPoints[0] && cityPoints[1] > cityPoints[2] && cityPoints[1] > cityPoints[3] && cityPoints[1] > cityPoints[4]) {
 		  // alert('You got Portland!');
 		  	$('.intro').hide();
   			$('.quiz').hide();
@@ -122,7 +122,7 @@ $(document).ready(function() {
   			$('.new-button').show();
 		  	$('.row-Portland').show();
 
-		} else if (cityPoints[2] > cityPoints[0] && cityPoints[2] > cityPoints[1] && cityPoints[2] > cityPoints[3] && cityPoints[2] > cityPoints[4]) {
+		} else if (cityPoints[2] >= cityPoints[0] && cityPoints[2] > cityPoints[1] && cityPoints[2] > cityPoints[3] && cityPoints[2] > cityPoints[4]) {
 		  // alert('You got Cape Town!');
 		  	$('.intro').hide();
   			$('.quiz').hide();
@@ -130,7 +130,7 @@ $(document).ready(function() {
   			$('.new-button').show();
 		  	$('.row-CapeTown').show();
 
-		} else if (cityPoints[3] > cityPoints[0] && cityPoints[3] > cityPoints[1] && cityPoints[3] > cityPoints[2] && cityPoints[3] > cityPoints[4]) {
+		} else if (cityPoints[3] >= cityPoints[0] && cityPoints[3] > cityPoints[1] && cityPoints[3] > cityPoints[2] && cityPoints[3] > cityPoints[4]) {
 		  // alert('You got New York!');
 		  	$('.intro').hide();
   			$('.quiz').hide();
@@ -138,7 +138,7 @@ $(document).ready(function() {
   			$('.new-button').show();
 		  	$('.row-NewYork').show();
 
-		} else if (cityPoints[4] > cityPoints[0] && cityPoints[4] > cityPoints[1] && cityPoints[4] > cityPoints[2] && cityPoints[4] > cityPoints[3]) {
+		} else if (cityPoints[4] >= cityPoints[0] && cityPoints[4] > cityPoints[1] && cityPoints[4] > cityPoints[2] && cityPoints[4] > cityPoints[3]) {
 		  // alert('You got Tokyo!');
 		   	$('.intro').hide();
   			$('.quiz').hide();
